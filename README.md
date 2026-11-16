@@ -10,6 +10,9 @@ Every random choice comes from a seed, so a run that found something can be repe
 It was written for AUv3 app extensions, and tests AUv2 components the same way (macOS hosts
 those out of process too, in its AU hosting service).
 
+[Install](#install) · [Use](#use) · [What it checks](#what-it-checks) · [Scenarios](#scenarios) ·
+[Results](#results) · [Common findings](#common-findings) · [Limitations](#limitations)
+
 ```
 $ auv3-stress aufx dely appl --no-editor --seed 42
 auv3-stress 0.1.0: aufx dely appl, seed 42
@@ -75,7 +78,8 @@ on how a unit behaves when it is used properly, and it runs on iOS too. The two 
 
 ## Install
 
-Needs macOS 13 or later and Swift 5.10 or later (Xcode 15.3+). No dependencies but Apple's frameworks.
+Needs macOS 13 or later and Swift 5.10 or later (Xcode 15.3+). No dependencies but Apple's
+frameworks.
 
 ```sh
 git clone https://github.com/zhiii0x/auv3-stress.git
