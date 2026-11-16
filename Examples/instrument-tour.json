@@ -1,0 +1,11 @@
+{
+  "name": "Instrument tour",
+  "steps": [
+    { "play": 57, "for": 2, "expect": ["sound", "in-tune"] },
+    { "release": "all", "for": 3, "expect": "silence" },
+    { "play": [48, 55, 60], "velocity": 110, "for": 2, "expect": "sound" },
+    { "play": 64, "for": 1, "expect": "sound" },
+    { "release": [48, 55], "for": 1, "expect": "sound" },
+    { "release": "all", "for": 3, "expect": "silence" }
+  ]
+}

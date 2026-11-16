@@ -1,0 +1,11 @@
+{
+  "name": "Delay echo (Apple AUDelay: auv3-stress aufx dely appl)",
+  "steps": [
+    { "wait": 1, "input": "tone", "expect": "sound" },
+    { "set": "0", "to": "100%", "for": 1, "expect": "sound" },
+    { "sweep": "1", "from": 0.1, "to": 1.0, "over": 3, "expect": "sound" },
+    { "set": "0", "to": "50%", "for": 1, "expect": "no-click" },
+    { "wait": 1, "input": "impulse" },
+    { "wait": 25, "input": "silence", "expect": "silence" }
+  ]
+}
